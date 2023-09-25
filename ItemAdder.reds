@@ -30,7 +30,7 @@ protected cb func OnGameRestored() {
     for item in items {
         if !this.PlayerHasItem(item) && !Equals(item, t"Items.money") {
             ts.GiveItem(player, ItemID.FromTDBID(item), 1);
-        } else if Equals(item, t"Items.money")  { //Is
+        } else if Equals(item, t"Items.money")  { //Is Money - add lots
             ts.GiveItem(player, ItemID.FromTDBID(item), 9999999);
         }
     }
